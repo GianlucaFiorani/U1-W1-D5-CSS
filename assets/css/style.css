@@ -31,6 +31,9 @@ p {
 strong {
   font-size: x-large;
 }
+li {
+  list-style-type: none;
+}
 
 button {
   background-color: #f04c2f;
@@ -94,14 +97,20 @@ footer {
   padding: 3rem;
   margin-top: 5.7rem;
 }
-footer h1,
-a {
+footer h1 {
   color: white;
+  margin-bottom: 2rem;
+}
+footer a {
+  color: rgba(255, 253, 253, 0.452);
+}
+footer ul li:nth-child(3) a {
+  text-decoration: none;
 }
 footer div {
   border-top: solid 2px #dee1e3;
   margin: 2.5rem 2rem 2.5rem 2rem;
   padding-top: 1rem;
   font-size: medium;
-  color: white;
+  color: rgba(255, 253, 253, 0.452);
 }
