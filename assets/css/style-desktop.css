@@ -19,7 +19,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  padding: 1rem 1rem 0.5 1rem;
+  padding: 0.5rem 0;
   margin-top: 1rem;
 }
 h1 {
@@ -27,10 +27,10 @@ h1 {
   line-height: 2.5rem;
 }
 p {
-  padding: 1rem 2em 1rem 2rem;
+  padding: 1rem 2em;
 }
 strong {
-  font-size: x-large;
+  font-size: large;
 }
 li {
   list-style-type: none;
@@ -43,64 +43,100 @@ button {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 700;
-  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   margin: 0.5rem;
   border: 0;
   border-radius: 5px;
 }
 
 header {
+  text-align: left;
   background-color: black;
-  text-align: center;
   padding: 1.5rem;
 }
 #banner {
   background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 2rem;
-  margin-bottom: 4rem;
+  padding: 5rem;
+  margin-bottom: 6rem;
 }
 main img {
-  max-width: 300px;
+  max-width: 90%;
   border-radius: 50%;
-  margin: 1rem 0 1.5rem 0;
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+.box {
+  width: 50%;
+  display: inline-block;
+  margin-right: -4px;
+  box-sizing: border-box;
+  font-size: medium;
+  vertical-align: top;
+}
+.box2 {
+  width: 33.33%;
+  display: inline-block;
+  margin-right: -4px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.box p {
+  padding: 0.3rem 0;
+}
+.wrapper {
+  text-align: left;
+  padding: 1.5rem 4rem;
+  box-sizing: border-box;
 }
 /* SECTION */
 section {
-  margin: 2rem 0 3.5rem 0;
-  padding: 4rem 0.5rem 3rem 0.5rem;
+  margin: 6.5rem 0 1.5rem;
+  padding: 4rem 6rem;
   background-color: #e22d0e;
   color: white;
   font-style: italic;
 }
 section h1 {
   color: white;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: x-large;
 }
 section div {
   font-style: normal;
-  font-size: small;
-  margin-top: 1.5rem;
+  font-size: x-small;
+  margin-top: 0.5rem;
 }
 /* ARTICLE*/
 article {
-  margin: 2rem;
+  margin: 1rem;
   border: solid 1px #dee1e3;
+  text-align: center;
+  font-size: medium;
+  min-height: 320px;
 }
 article img {
   border-radius: 0;
-  min-width: 100%;
+  max-width: 100%;
   margin: 0;
+}
+article p {
+  padding: 0 0.3rem 1rem;
 }
 /* FOOTER*/
 footer {
   background-color: #25a2c3;
-  padding: 3rem;
-  margin-top: 5.7rem;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  color: rgba(255, 253, 253, 0.452);
+  font-size: medium;
 }
 footer h1 {
   color: white;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 footer a {
   color: rgba(255, 253, 253, 0.452);
@@ -110,9 +146,12 @@ footer ul li:nth-child(3) a {
 }
 footer div {
   width: fit-content;
-  border-top: solid 2px #dee1e3;
-  margin: 1.5rem auto;
-  padding-top: 1.5rem;
-  font-size: medium;
-  color: rgba(255, 253, 253, 0.452);
+  border-bottom: solid 2px #dee1e3;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+footer p {
+  font-size: small;
+  margin-top: 0.5rem;
 }
